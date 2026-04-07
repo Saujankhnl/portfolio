@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saujan Khanal | Portfolio</title>
+<meta name="description" content="Saujan Khanal portfolio showcasing Django, Python, data science learning, internship readiness, projects, education, and contact details.">
+<meta name="keywords" content="Saujan Khanal, Django developer, Python portfolio, data science learner, BCA student, Nepal developer, web developer portfolio">
+<meta name="author" content="Saujan Khanal">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Saujan Khanal | Portfolio">
+<meta property="og:description" content="Portfolio of Saujan Khanal featuring Django, Python, projects, education, and data science learning.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="image.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Saujan Khanal | Portfolio">
+<meta name="twitter:description" content="Django, Python, projects, education, and data science learning in one portfolio.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2358f0b5'/%3E%3Cstop offset='100%25' stop-color='%237aa2ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2308111f'/%3E%3Cpath d='M18 46V18h8v11l10-11h10L34 31l13 15H37L26 33v13z' fill='url(%23g)'/%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --bg: #08111f;
+  --bg-soft: rgba(12, 27, 47, 0.7);
+  --panel: rgba(10, 18, 34, 0.78);
+  --line: rgba(122, 162, 255, 0.16);
+  --text: #f5f7ff;
+  --muted: #aab8d6;
+  --accent: #58f0b5;
+  --accent-2: #7aa2ff;
+  --accent-3: #ffb86c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(88, 240, 181, 0.16), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(122, 162, 255, 0.18), transparent 28%),
+    linear-gradient(180deg, #08111f 0%, #091625 52%, #050b14 100%);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(circle at center, black 45%, transparent 90%);
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+h1, h2, h3, .brand-font {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.glass {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent) 0%, #bce7ff 50%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nameplate {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(88, 240, 181, 0.18);
+  background: linear-gradient(135deg, rgba(88, 240, 181, 0.12), rgba(122, 162, 255, 0.06));
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.nameplate-title {
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+}
+
+.hero-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.75rem 1rem;
+  color: #dce8ff;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.hero-social:hover {
+  transform: translateY(-2px);
+  border-color: rgba(88, 240, 181, 0.28);
+  background: rgba(88, 240, 181, 0.08);
+}
+
+.hero-social.primary {
+  background: rgba(88, 240, 181, 0.14);
+  border-color: rgba(88, 240, 181, 0.24);
+  color: #e6fff6;
+}
+
+.hero-visual-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-visual-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(88, 240, 181, 0.08), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(122, 162, 255, 0.12), transparent 28%);
+  pointer-events: none;
+}
+
+.hero-overlay-card {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.hero-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.hero-chip {
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.52rem 0.85rem;
+  font-size: 0.78rem;
+  color: #dce8ff;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(16px);
+  opacity: 0.8;
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(88, 240, 181, 0.18), transparent 68%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 5;
+  transition: opacity 0.2s ease;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.pulse-ring {
+  animation: pulseRing 3.2s ease-in-out infinite;
+}
+
+.typing-caret::after {
+  content: "|";
+  margin-left: 4px;
+  color: var(--accent);
+  animation: blink 0.9s steps(1) infinite;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(88, 240, 181, 0.28);
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(122, 162, 255, 0.16), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(88, 240, 181, 0.12), transparent 28%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.project-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.project-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-status {
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #dce8ff;
+}
+
+.project-preview {
+  margin-top: 1.35rem;
+  border-radius: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(7, 14, 28, 0.42));
+  padding: 1rem;
+}
+
+.project-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.preview-block {
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.preview-block.accent {
+  background: linear-gradient(90deg, rgba(88, 240, 181, 0.92), rgba(122, 162, 255, 0.92));
+}
+
+.project-meta {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.project-meta-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.85rem 0.95rem;
+}
+
+.project-meta-card p:first-child {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.project-meta-card p:last-child {
+  margin-top: 0.45rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.project-actions {
+  margin-top: 1.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-link {
+  border-radius: 9999px;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.project-link.primary {
+  background: rgba(88, 240, 181, 0.16);
+  border: 1px solid rgba(88, 240, 181, 0.24);
+  color: #dffff3;
+}
+
+.project-link.secondary {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #dce8ff;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+}
+
+.about-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(88, 240, 181, 0.12), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(122, 162, 255, 0.12), transparent 32%);
+  pointer-events: none;
+}
+
+.about-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.95rem 1rem;
+}
+
+.feature-dot {
+  margin-top: 0.15rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(88, 240, 181, 1), rgba(122, 162, 255, 1));
+  box-shadow: 0 0 0 6px rgba(88, 240, 181, 0.08);
+  flex-shrink: 0;
+}
+
+.mini-stat {
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1rem;
+}
+
+.mini-stat p:first-child {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.mini-stat p:last-child {
+  margin-top: 0.45rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.explore-card {
+  border-radius: 1.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(8, 17, 31, 0.4)),
+    radial-gradient(circle at top right, rgba(122, 162, 255, 0.14), transparent 30%);
+}
+
+.education-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  top: 1.6rem;
+  bottom: 1.6rem;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(88, 240, 181, 0.75), rgba(122, 162, 255, 0.18));
+  opacity: 0.55;
+}
+
+.education-card-content {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.education-dot {
+  position: absolute;
+  left: -0.08rem;
+  top: 0.25rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(88, 240, 181, 1), rgba(122, 162, 255, 1));
+  box-shadow: 0 0 0 7px rgba(88, 240, 181, 0.08);
+}
+
+.skill-showcase {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.skill-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-filter-btn {
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: #dce8ff;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-filter-btn:hover,
+.skill-filter-btn.active {
+  background: rgba(88, 240, 181, 0.12);
+  border-color: rgba(88, 240, 181, 0.3);
+  color: #e5fff6;
+  transform: translateY(-1px);
+}
+
+.skill-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(88, 240, 181, 0.12), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(122, 162, 255, 0.12), transparent 30%);
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.skill-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.skill-meter {
+  margin-top: 1rem;
+}
+
+.skill-meter-track {
+  overflow: hidden;
+  height: 0.55rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.skill-meter-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, rgba(88, 240, 181, 1), rgba(122, 162, 255, 1));
+  transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.skill-meter-label {
+  margin-top: 0.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.skill-mini-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-mini-tag {
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.42rem 0.7rem;
+  font-size: 0.78rem;
+  color: #dce8ff;
+}
+
+.skill-detail-panel {
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(8, 17, 31, 0.45)),
+    radial-gradient(circle at top right, rgba(122, 162, 255, 0.14), transparent 30%);
+}
+
+.skill-detail-points {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.skill-detail-point {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.skill-detail-point span:first-child {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-top: 0.35rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(88, 240, 181, 1), rgba(122, 162, 255, 1));
+  flex-shrink: 0;
+}
+
+.skill-pill {
+  border: 1px solid rgba(122, 162, 255, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.45rem;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 9999px;
+  background: var(--accent);
+  opacity: 0;
+  transform: translateX(-50%) scale(0.6);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.nav-link.active {
+  color: #dffdf3;
+}
+
+.nav-link.active::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.form-field {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  padding: 0.95rem 1rem;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.form-field::placeholder {
+  color: rgba(170, 184, 214, 0.75);
+}
+
+.form-field:focus {
+  border-color: rgba(88, 240, 181, 0.55);
+  box-shadow: 0 0 0 4px rgba(88, 240, 181, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+textarea.form-field {
+  min-height: 170px;
+  resize: vertical;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 60;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+
+.detail-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.tilt-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.copy-btn {
+  flex-shrink: 0;
+  border: 1px solid rgba(122, 162, 255, 0.22);
+  background: rgba(122, 162, 255, 0.08);
+  color: #dbe7ff;
+  border-radius: 9999px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(88, 240, 181, 0.12);
+  border-color: rgba(88, 240, 181, 0.35);
+  transform: translateY(-1px);
+}
+
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+  opacity: 0;
+}
+
+.mobile-menu.open {
+  max-height: 20rem;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.fab-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(88, 240, 181, 0.25);
+  background: rgba(8, 17, 31, 0.82);
+  color: var(--text);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.fab-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.fab-top:hover {
+  border-color: rgba(88, 240, 181, 0.55);
+}
+
+.toast-stack {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 5rem;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  pointer-events: none;
+}
+
+.toast {
+  min-width: 15rem;
+  max-width: 22rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(8, 17, 31, 0.9);
+  color: var(--text);
+  padding: 0.9rem 1rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(14px);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.success {
+  border-color: rgba(88, 240, 181, 0.35);
+}
+
+.toast.error {
+  border-color: rgba(255, 120, 120, 0.35);
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-16px); }
+}
+
+@keyframes pulseRing {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.05); opacity: 0.55; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .float-slow,
+  .pulse-ring,
+  .typing-caret::after {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .cursor-glow {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cursor-glow {
+    display: none;
+  }
+}
+</style>
+</head>
+<body class="text-white selection:bg-emerald-300 selection:text-slate-900">
+<div id="scrollProgress" class="progress-bar"></div>
+<div id="cursorGlow" class="cursor-glow"></div>
+
+<header class="sticky top-0 z-30 px-4 pt-4 md:px-8">
+  <nav class="glass mx-auto max-w-6xl rounded-[1.75rem] px-5 py-4">
+    <div class="flex items-center justify-between gap-4">
+    <a href="#home" class="brand-font flex items-center gap-3 text-lg font-bold tracking-[0.2em] text-white">
+      <span>SK</span>
+      <span class="hidden rounded-full border border-emerald-300/30 bg-emerald-300/10 px-3 py-1 text-[10px] tracking-[0.28em] text-emerald-200 md:inline-flex">AVAILABLE</span>
+    </a>
+    <div class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+      <a href="#about" class="nav-link transition hover:text-emerald-300">About</a>
+      <a href="#education" class="nav-link transition hover:text-emerald-300">Education</a>
+      <a href="#projects" class="nav-link transition hover:text-emerald-300">Projects</a>
+      <a href="#skills" class="nav-link transition hover:text-emerald-300">Skills</a>
+      <a href="#contact" class="nav-link transition hover:text-emerald-300">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="hidden rounded-full border border-emerald-300/30 bg-emerald-300/10 px-4 py-2 text-sm font-medium text-emerald-200 transition hover:-translate-y-0.5 hover:border-emerald-300/60 hover:bg-emerald-300/20 md:inline-flex">Let's Talk</a>
+      <button id="menuToggle" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-100 transition hover:border-emerald-300/40 hover:text-emerald-200 md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu md:hidden">
+      <div class="grid gap-2 border-t border-white/10 pt-4 text-sm text-slate-200">
+        <a href="#about" class="rounded-2xl bg-white/5 px-4 py-3 transition hover:bg-white/10">About</a>
+        <a href="#education" class="rounded-2xl bg-white/5 px-4 py-3 transition hover:bg-white/10">Education</a>
+        <a href="#projects" class="rounded-2xl bg-white/5 px-4 py-3 transition hover:bg-white/10">Projects</a>
+        <a href="#skills" class="rounded-2xl bg-white/5 px-4 py-3 transition hover:bg-white/10">Skills</a>
+        <a href="#contact" class="rounded-2xl bg-emerald-300/10 px-4 py-3 text-emerald-200 transition hover:bg-emerald-300/20">Contact</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="relative overflow-hidden px-4 pb-16 pt-10 md:px-8 md:pb-24 md:pt-16">
+    <div class="hero-orb left-[-4rem] top-24 h-40 w-40 bg-emerald-400/30"></div>
+    <div class="hero-orb right-[8%] top-16 h-48 w-48 bg-blue-400/30"></div>
+
+    <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+      <div class="reveal space-y-10">
+        <div class="max-w-xl space-y-4">
+          <p class="text-xs uppercase tracking-[0.35em] text-sky-200/70">Hello, I'm</p>
+          <div class="nameplate rounded-[1.6rem] px-5 py-4 sm:px-6">
+            <p class="nameplate-title brand-font text-2xl font-bold uppercase tracking-[0.42em] text-emerald-100 sm:text-3xl md:text-4xl">
+              Saujan Khanal
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-5">
+          <h1 class="brand-font max-w-3xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl xl:text-[5.5rem]">
+            Turning ideas into
+            <span class="gradient-text">clean, modern digital experiences.</span>
+          </h1>
+          <p class="max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
+            Based in Bhadrapur, Jhapa, Nepal. I enjoy building full stack web projects, learning Django deeply, and exploring how data science can make products smarter.
+          </p>
+          <p class="brand-font text-xl text-slate-100 md:text-2xl">
+            I'm focused on <span id="typingText" class="typing-caret text-emerald-300"></span>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="rounded-full bg-emerald-300 px-7 py-4 font-semibold text-slate-950 transition hover:-translate-y-1 hover:bg-emerald-200">
+            View Projects
+          </a>
+          <a href="#contact" class="rounded-full border border-white/15 bg-white/5 px-7 py-4 font-semibold text-white transition hover:-translate-y-1 hover:border-sky-200/40 hover:bg-white/10">
+            Get In Touch
+          </a>
+          <a href="Saujan-Khanal-Resume.pdf" download class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-7 py-4 font-semibold text-emerald-100 transition hover:-translate-y-1 hover:border-emerald-300/60 hover:bg-emerald-300/18">
+            Download Resume
+          </a>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="https://www.facebook.com/saujan.khanal.518634" target="_blank" rel="noopener noreferrer" class="hero-social primary">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://github.com/Saujankhnl" target="_blank" rel="noopener noreferrer" class="hero-social">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/saujan-khanal-4685b3346/" target="_blank" rel="noopener noreferrer" class="hero-social">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:saujankhnl@gmail.com" class="hero-social">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-3">
+          <div class="glass rounded-3xl p-5">
+            <p class="text-sm uppercase tracking-[0.25em] text-slate-400">Education</p>
+            <p class="mt-3 text-lg font-medium text-white">BCA Running</p>
+          </div>
+          <div class="glass rounded-3xl p-5">
+            <p class="text-sm uppercase tracking-[0.25em] text-slate-400">Focus</p>
+            <p class="mt-3 text-lg font-medium text-white">Django, Python, Data Science</p>
+          </div>
+          <div class="glass rounded-3xl p-5">
+            <p class="text-sm uppercase tracking-[0.25em] text-slate-400">Location</p>
+            <p class="mt-3 text-lg font-medium text-white">Jhapa, Nepal</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="glass hero-visual-card float-slow relative overflow-hidden rounded-[2rem] p-5 md:p-7">
+          <div class="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-emerald-300/60 to-transparent"></div>
+          <div class="grid gap-5">
+            <div class="relative overflow-hidden rounded-[1.7rem] border border-white/10 bg-slate-950/40 p-3">
+              <img src="image.jpg" alt="Portrait of Saujan Khanal" class="aspect-[4/5] w-full rounded-[1.35rem] object-cover">
+              <div class="absolute left-6 top-6 hero-chip-row">
+                <span class="hero-chip">Python</span>
+                <span class="hero-chip">Django</span>
+              </div>
+              <div class="hero-overlay-card absolute bottom-6 left-6 rounded-2xl border border-emerald-300/20 bg-slate-950/75 px-4 py-3 backdrop-blur">
+                <p class="brand-font text-base font-bold text-emerald-300">Available for internships</p>
+                <p class="text-sm text-slate-300">Remote-friendly, practical, and eager to learn fast.</p>
+              </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-[0.85fr_1.15fr]">
+              <img src="image-2.jpg" alt="Secondary portrait or project visual" class="h-full min-h-[180px] w-full rounded-[1.5rem] border border-white/10 object-cover">
+              <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+                <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Current Track</p>
+                <h2 class="brand-font mt-3 text-2xl font-bold text-white">Building useful products with practical code</h2>
+                <p class="mt-3 text-sm leading-7 text-slate-300">
+                  From Django-based applications to early experiments in data science, I care about clarity, real-world usefulness, and steady improvement.
+                </p>
+                <div class="mt-5 hero-chip-row">
+                  <span class="hero-chip">NumPy</span>
+                  <span class="hero-chip">Pandas</span>
+                  <span class="hero-chip">Problem Solving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="px-4 py-16 md:px-8 md:py-24">
+    <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+      <div class="reveal glass about-panel rounded-[2rem] p-7 md:p-9">
+        <div class="about-shell">
+          <p class="text-sm uppercase tracking-[0.3em] text-sky-200/70">About Me</p>
+          <h2 class="brand-font mt-4 text-3xl font-bold md:text-4xl">Learning in public, building with intention.</h2>
+          <p class="mt-5 leading-8 text-slate-300">
+            I'm a BCA student who became serious about coding from the first semester of my BCA journey. From the beginning, I had a strong interest in Python, and that curiosity gave me the confidence to start learning and building with it more deeply.
+          </p>
+          <p class="mt-4 leading-8 text-slate-300">
+            After learning Python, I moved into Django to understand how real web applications are built. Now I am slowly stepping into data science, learning important Python libraries like NumPy and Pandas so I can build a stronger foundation in analysis and data-driven problem solving.
+          </p>
+          <p class="mt-4 leading-8 text-slate-300">
+            My goal is to keep improving through practical projects, strengthen my backend development skills, and continue growing from web development into data science with steady hands-on learning.
+          </p>
+          <div class="mt-8 grid gap-3 sm:grid-cols-3">
+            <div class="mini-stat">
+              <p>Coding Start</p>
+              <p>BCA 1st Semester</p>
+            </div>
+            <div class="mini-stat">
+              <p>Main Path</p>
+              <p>Python to Django</p>
+            </div>
+            <div class="mini-stat">
+              <p>Now Learning</p>
+              <p>NumPy and Pandas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal grid gap-5 md:grid-cols-2">
+        <div class="glass rounded-[2rem] p-6">
+          <p class="text-sm uppercase tracking-[0.25em] text-slate-400">What I Value</p>
+          <div class="feature-list mt-4">
+            <div class="feature-item">
+              <span class="feature-dot"></span>
+              <p class="text-slate-200">Clean backend logic that is easy to maintain</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-dot"></span>
+              <p class="text-slate-200">Interfaces that feel clear and welcoming</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-dot"></span>
+              <p class="text-slate-200">Projects that teach something practical</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass rounded-[2rem] p-6">
+          <p class="text-sm uppercase tracking-[0.25em] text-slate-400">Experience Snapshot</p>
+          <div class="feature-list mt-4">
+            <div class="feature-item">
+              <span class="feature-dot"></span>
+              <p class="text-slate-200">Remote internship exposure</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-dot"></span>
+              <p class="text-slate-200">Hands-on Django learning</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-dot"></span>
+              <p class="text-slate-200">Growing as a data science learner</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass explore-card rounded-[2rem] p-6 md:col-span-2">
+          <p class="text-sm uppercase tracking-[0.25em] text-slate-400">Currently Exploring</p>
+          <p class="mt-3 max-w-2xl text-slate-300">
+            These are the areas I am actively studying and building with right now as I grow from web development into more data-focused work.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-3">
+            <span class="skill-pill rounded-full px-4 py-2 text-sm text-slate-200">Django Projects</span>
+            <span class="skill-pill rounded-full px-4 py-2 text-sm text-slate-200">REST APIs</span>
+            <span class="skill-pill rounded-full px-4 py-2 text-sm text-slate-200">Python Problem Solving</span>
+            <span class="skill-pill rounded-full px-4 py-2 text-sm text-slate-200">Data Science Basics</span>
+            <span class="skill-pill rounded-full px-4 py-2 text-sm text-slate-200">Data Science Learning</span>
+          </div>
+          <div class="mt-6 grid gap-3 sm:grid-cols-3">
+            <div class="mini-stat">
+              <p>Exploring</p>
+              <p>Backend systems</p>
+            </div>
+            <div class="mini-stat">
+              <p>Improving</p>
+              <p>Problem solving</p>
+            </div>
+            <div class="mini-stat">
+              <p>Next Step</p>
+              <p>Applied data work</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="px-4 py-16 md:px-8 md:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal mb-10 grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
+        <div>
+          <p class="text-sm uppercase tracking-[0.3em] text-sky-200/70">Education</p>
+          <h2 class="brand-font mt-3 text-3xl font-bold md:text-4xl">Academic background and current study path</h2>
+        </div>
+        <p class="max-w-2xl text-lg leading-8 text-slate-300">
+          My academic journey supports my growth in programming, web development, Django, Python, and the data science skills I am learning step by step.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="reveal glass explore-card education-card rounded-[2rem] p-6">
+          <div class="education-card-content">
+            <span class="education-dot"></span>
+          <p class="text-sm uppercase tracking-[0.25em] text-emerald-300/80">Currently Running</p>
+          <h3 class="brand-font mt-4 text-2xl font-bold">BCA</h3>
+          <p class="mt-4 leading-7 text-slate-300">
+            Currently studying Bachelor of Computer Applications and building a stronger foundation in coding, backend development, and problem solving.
+          </p>
+          </div>
+        </div>
+
+        <div class="reveal glass explore-card education-card rounded-[2rem] p-6">
+          <div class="education-card-content">
+            <span class="education-dot"></span>
+          <p class="text-sm uppercase tracking-[0.25em] text-sky-300/80">+2 Completed</p>
+          <h3 class="brand-font mt-4 text-2xl font-bold">Pragyan Academy</h3>
+          <p class="mt-4 leading-7 text-slate-300">
+            Completed +2 from Pragyan Academy with a GPA of 3.34.
+          </p>
+          </div>
+        </div>
+
+        <div class="reveal glass explore-card education-card rounded-[2rem] p-6">
+          <div class="education-card-content">
+            <span class="education-dot"></span>
+          <p class="text-sm uppercase tracking-[0.25em] text-orange-300/80">School Level</p>
+          <h3 class="brand-font mt-4 text-2xl font-bold">Modern English High School</h3>
+          <p class="mt-4 leading-7 text-slate-300">
+            Completed school education up to grade 10 from Modern English High School.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="px-4 py-16 md:px-8 md:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal mb-10 grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
+        <div class="space-y-5">
+          <p class="text-sm uppercase tracking-[0.3em] text-sky-200/70">Selected Work</p>
+          <h2 class="brand-font mt-3 text-3xl font-bold md:text-4xl">Projects and learning milestones</h2>
+          <div class="grid gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl border border-emerald-300/12 bg-emerald-300/8 p-4">
+              <p class="text-xs uppercase tracking-[0.22em] text-slate-400">Featured</p>
+              <p class="mt-2 text-lg font-semibold text-white">3 Highlights</p>
+            </div>
+            <div class="rounded-2xl border border-sky-300/12 bg-sky-300/8 p-4">
+              <p class="text-xs uppercase tracking-[0.22em] text-slate-400">Core Stack</p>
+              <p class="mt-2 text-lg font-semibold text-white">Django + Python</p>
+            </div>
+            <div class="rounded-2xl border border-orange-300/12 bg-orange-300/8 p-4">
+              <p class="text-xs uppercase tracking-[0.22em] text-slate-400">Focus</p>
+              <p class="mt-2 text-lg font-semibold text-white">Real-world learning</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass rounded-[1.8rem] p-6">
+          <p class="max-w-xl text-lg leading-8 text-slate-300">
+            A curated project section that highlights practical problem solving, internship growth, and Django-based product building with a clearer showcase style.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-3">
+        <article class="project-card tilt-card reveal glass rounded-[2rem] p-6 transition duration-300">
+          <div class="project-shell">
+            <div class="project-topline">
+              <p class="text-sm uppercase tracking-[0.28em] text-emerald-300/80">Web App</p>
+              <span class="project-status">Featured</span>
+            </div>
+            <h3 class="brand-font mt-4 text-2xl font-bold">Mantra Canteen Platform</h3>
+            <p class="mt-4 leading-7 text-slate-300">
+              A practical canteen and e-commerce concept focused on product listing, ordering flow, and cleaner management features.
+            </p>
+            <div class="project-preview">
+              <div class="project-preview-grid">
+                <span class="preview-block accent"></span>
+                <span class="preview-block"></span>
+                <span class="preview-block"></span>
+                <span class="preview-block"></span>
+                <span class="preview-block accent"></span>
+                <span class="preview-block"></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-meta-card">
+                <p>Focus</p>
+                <p>Ordering flow</p>
+              </div>
+              <div class="project-meta-card">
+                <p>Type</p>
+                <p>Product concept</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-200">
+              <span class="skill-pill rounded-full px-3 py-1.5">Django</span>
+              <span class="skill-pill rounded-full px-3 py-1.5">Python</span>
+              <span class="skill-pill rounded-full px-3 py-1.5">Data Science Learning</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Saujankhnl" target="_blank" rel="noopener noreferrer" class="project-link primary">GitHub Profile</a>
+              <a href="#contact" class="project-link secondary">Request Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt-card reveal glass rounded-[2rem] p-6 transition duration-300">
+          <div class="project-shell">
+            <div class="project-topline">
+              <p class="text-sm uppercase tracking-[0.28em] text-sky-300/80">Internship</p>
+              <span class="project-status">Experience</span>
+            </div>
+            <h3 class="brand-font mt-4 text-2xl font-bold">Remotly Internship</h3>
+            <p class="mt-4 leading-7 text-slate-300">
+              A remote internship experience where I improved collaboration, communication, and practical development skills while learning in a professional environment.
+            </p>
+            <div class="project-preview">
+              <div class="project-preview-grid">
+                <span class="preview-block"></span>
+                <span class="preview-block accent"></span>
+                <span class="preview-block"></span>
+                <span class="preview-block accent"></span>
+                <span class="preview-block"></span>
+                <span class="preview-block accent"></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-meta-card">
+                <p>Focus</p>
+                <p>Team collaboration</p>
+              </div>
+              <div class="project-meta-card">
+                <p>Outcome</p>
+                <p>Professional growth</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-200">
+              <span class="skill-pill rounded-full px-3 py-1.5">Remote Work</span>
+              <span class="skill-pill rounded-full px-3 py-1.5">Collaboration</span>
+              <span class="skill-pill rounded-full px-3 py-1.5">Professional Growth</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://www.linkedin.com/in/saujan-khanal-4685b3346/" target="_blank" rel="noopener noreferrer" class="project-link primary">LinkedIn</a>
+              <a href="#contact" class="project-link secondary">Discuss Experience</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt-card reveal glass rounded-[2rem] p-6 transition duration-300">
+          <div class="project-shell">
+            <div class="project-topline">
+              <p class="text-sm uppercase tracking-[0.28em] text-orange-300/80">Django Project</p>
+              <span class="project-status">Build</span>
+            </div>
+            <h3 class="brand-font mt-4 text-2xl font-bold">Ecommerce Project</h3>
+            <p class="mt-4 leading-7 text-slate-300">
+              A Django ecommerce project with product listings, shopping cart flow, order management, and backend logic for a practical online store experience.
+            </p>
+            <div class="project-preview">
+              <div class="project-preview-grid">
+                <span class="preview-block accent"></span>
+                <span class="preview-block accent"></span>
+                <span class="preview-block"></span>
+                <span class="preview-block"></span>
+                <span class="preview-block"></span>
+                <span class="preview-block accent"></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-meta-card">
+                <p>Focus</p>
+                <p>Cart and orders</p>
+              </div>
+              <div class="project-meta-card">
+                <p>Type</p>
+                <p>Online store</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-200">
+              <span class="skill-pill rounded-full px-3 py-1.5">Django</span>
+              <span class="skill-pill rounded-full px-3 py-1.5">Python</span>
+              <span class="skill-pill rounded-full px-3 py-1.5">Ecommerce</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Saujankhnl" target="_blank" rel="noopener noreferrer" class="project-link primary">GitHub Profile</a>
+              <a href="#contact" class="project-link secondary">Project Inquiry</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="px-4 py-16 md:px-8 md:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal mb-10">
+        <p class="text-sm uppercase tracking-[0.3em] text-sky-200/70">Core Skills</p>
+        <h2 class="brand-font mt-3 text-3xl font-bold md:text-4xl">Tools I'm building with right now</h2>
+      </div>
+
+      <div class="skill-showcase">
+        <div class="reveal skill-filters">
+          <button type="button" class="skill-filter-btn active" data-skill-filter="all">All Skills</button>
+          <button type="button" class="skill-filter-btn" data-skill-filter="web">Web</button>
+          <button type="button" class="skill-filter-btn" data-skill-filter="backend">Backend</button>
+          <button type="button" class="skill-filter-btn" data-skill-filter="data">Data Science</button>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div class="reveal glass skill-card tilt-card rounded-[2rem] p-6" data-skill-category="web" data-skill-name="HTML & CSS" data-skill-level="84" data-skill-focus="Responsive layout building" data-skill-summary="Building responsive page layouts and clean interfaces with HTML and CSS fundamentals." data-skill-points="Semantic structure|Responsive layouts|Clean visual styling">
+            <div class="skill-card-content">
+              <i class="fa-solid fa-code text-2xl text-emerald-300"></i>
+              <h3 class="brand-font mt-4 text-xl font-bold">HTML & CSS</h3>
+              <p class="mt-3 text-slate-300">Building responsive page layouts and clean interfaces with HTML and CSS fundamentals.</p>
+              <div class="skill-meter">
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="84"></div>
+                </div>
+                <div class="skill-meter-label">
+                  <span>Current confidence</span>
+                  <span>84%</span>
+                </div>
+              </div>
+              <div class="skill-mini-tags">
+                <span class="skill-mini-tag">Responsive</span>
+                <span class="skill-mini-tag">Layouts</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal glass skill-card tilt-card rounded-[2rem] p-6" data-skill-category="backend" data-skill-name="Django & Python" data-skill-level="87" data-skill-focus="Backend application building" data-skill-summary="Creating backend applications with Django and strengthening problem solving with Python." data-skill-points="Django apps|Python problem solving|Structured workflows">
+            <div class="skill-card-content">
+              <i class="fa-solid fa-server text-2xl text-sky-300"></i>
+              <h3 class="brand-font mt-4 text-xl font-bold">Django & Python</h3>
+              <p class="mt-3 text-slate-300">Creating backend applications with Django and strengthening problem solving with Python.</p>
+              <div class="skill-meter">
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="87"></div>
+                </div>
+                <div class="skill-meter-label">
+                  <span>Current confidence</span>
+                  <span>87%</span>
+                </div>
+              </div>
+              <div class="skill-mini-tags">
+                <span class="skill-mini-tag">Django</span>
+                <span class="skill-mini-tag">Python</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal glass skill-card tilt-card rounded-[2rem] p-6" data-skill-category="data" data-skill-name="NumPy & Pandas" data-skill-level="72" data-skill-focus="Data handling and analysis" data-skill-summary="Learning data science foundations through arrays, data handling, and practical analysis workflows." data-skill-points="Array work|Dataframes|Practical analysis">
+            <div class="skill-card-content">
+              <i class="fa-solid fa-database text-2xl text-orange-300"></i>
+              <h3 class="brand-font mt-4 text-xl font-bold">NumPy & Pandas</h3>
+              <p class="mt-3 text-slate-300">Learning data science foundations through arrays, data handling, and practical analysis workflows.</p>
+              <div class="skill-meter">
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="72"></div>
+                </div>
+                <div class="skill-meter-label">
+                  <span>Current confidence</span>
+                  <span>72%</span>
+                </div>
+              </div>
+              <div class="skill-mini-tags">
+                <span class="skill-mini-tag">NumPy</span>
+                <span class="skill-mini-tag">Pandas</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal glass skill-card tilt-card rounded-[2rem] p-6" data-skill-category="data" data-skill-name="Data Science Learning" data-skill-level="68" data-skill-focus="Building a stronger data foundation" data-skill-summary="Growing my skills in analysis, practical datasets, and the tools that support data-driven work." data-skill-points="Dataset exploration|Learning workflows|Data-driven thinking">
+            <div class="skill-card-content">
+              <i class="fa-solid fa-rocket text-2xl text-violet-300"></i>
+              <h3 class="brand-font mt-4 text-xl font-bold">Data Science Learning</h3>
+              <p class="mt-3 text-slate-300">Growing my skills in analysis, practical datasets, and the tools that support data-driven work.</p>
+              <div class="skill-meter">
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="68"></div>
+                </div>
+                <div class="skill-meter-label">
+                  <span>Current confidence</span>
+                  <span>68%</span>
+                </div>
+              </div>
+              <div class="skill-mini-tags">
+                <span class="skill-mini-tag">Analysis</span>
+                <span class="skill-mini-tag">Datasets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal glass skill-detail-panel p-6 md:p-8">
+          <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <p class="text-sm uppercase tracking-[0.28em] text-sky-200/70">Skill Spotlight</p>
+              <h3 id="skillDetailTitle" class="brand-font mt-4 text-3xl font-bold text-white">Django & Python</h3>
+              <p id="skillDetailFocus" class="mt-3 text-emerald-300">Backend application building</p>
+              <p id="skillDetailSummary" class="mt-5 leading-8 text-slate-300">Creating backend applications with Django and strengthening problem solving with Python.</p>
+            </div>
+            <div class="grid gap-5">
+              <div class="mini-stat">
+                <p>Current Focus</p>
+                <p id="skillDetailLevel">87% confidence</p>
+              </div>
+              <div class="skill-detail-points" id="skillDetailPoints">
+                <div class="skill-detail-point"><span></span><p class="text-slate-200">Django apps</p></div>
+                <div class="skill-detail-point"><span></span><p class="text-slate-200">Python problem solving</p></div>
+                <div class="skill-detail-point"><span></span><p class="text-slate-200">Structured workflows</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="px-4 pb-20 pt-16 md:px-8 md:pb-24 md:pt-24">
+    <div class="mx-auto grid max-w-6xl gap-6 reveal lg:items-start lg:grid-cols-[1.05fr_0.95fr]">
+      <div class="glass rounded-[2.25rem] p-8 md:p-12">
+        <p class="text-sm uppercase tracking-[0.3em] text-sky-200/70">Contact</p>
+        <h2 class="brand-font mt-4 text-3xl font-bold md:text-5xl">Let's build something meaningful.</h2>
+        <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+          If you want to collaborate, discuss an internship, or talk about Django projects, send me a message here and it can be delivered to my email.
+        </p>
+        <form action="https://formsubmit.co/saujankhnl@gmail.com" method="POST" class="mt-8 space-y-4">
+          <input type="hidden" name="_subject" value="New portfolio contact message">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div class="grid gap-4 md:grid-cols-2">
+            <input type="text" name="name" class="form-field" placeholder="Your name" required>
+            <input type="email" name="email" class="form-field" placeholder="Your email" required>
+          </div>
+          <input type="text" name="subject" class="form-field" placeholder="Subject (optional)">
+          <textarea name="message" class="form-field" placeholder="Write your message here" required></textarea>
+          <button type="submit" class="rounded-full bg-emerald-300 px-7 py-4 font-semibold text-slate-950 transition hover:-translate-y-1 hover:bg-emerald-200">
+            Send Message
+          </button>
+        </form>
+        <p class="mt-4 text-sm text-slate-400">
+          Messages from this form will be delivered to my email.
+        </p>
+      </div>
+      <div class="glass self-start rounded-[2.25rem] p-8 md:p-10">
+        <p class="text-sm uppercase tracking-[0.3em] text-sky-200/70">My Details</p>
+        <div class="mt-6 space-y-4">
+          <div class="detail-card">
+            <div>
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Resume</p>
+              <a href="Saujan-Khanal-Resume.pdf" download class="mt-2 inline-block text-lg text-white transition hover:text-emerald-300">Download PDF Resume</a>
+            </div>
+            <button type="button" class="copy-btn" data-copy="Saujan-Khanal-Resume.pdf">Copy</button>
+          </div>
+          <div class="detail-card">
+            <div>
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Email</p>
+              <a href="mailto:saujankhnl@gmail.com" class="mt-2 inline-block text-lg text-white transition hover:text-emerald-300">saujankhnl@gmail.com</a>
+            </div>
+            <button type="button" class="copy-btn" data-copy="saujankhnl@gmail.com">Copy</button>
+          </div>
+          <div class="detail-card">
+            <div>
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/saujan-khanal-4685b3346/" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-lg text-white transition hover:text-emerald-300">linkedin.com/in/saujan-khanal-4685b3346</a>
+            </div>
+            <button type="button" class="copy-btn" data-copy="https://www.linkedin.com/in/saujan-khanal-4685b3346/">Copy</button>
+          </div>
+          <div class="detail-card">
+            <div>
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">GitHub</p>
+              <a href="https://github.com/Saujankhnl" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-lg text-white transition hover:text-emerald-300">github.com/Saujankhnl</a>
+            </div>
+            <button type="button" class="copy-btn" data-copy="https://github.com/Saujankhnl">Copy</button>
+          </div>
+        </div>
+        <div class="mt-6 grid gap-3 sm:grid-cols-3">
+          <div class="rounded-2xl border border-emerald-300/12 bg-emerald-300/8 p-4">
+            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">Reply Time</p>
+            <p class="mt-2 text-sm font-medium text-white">Within 24 hours</p>
+          </div>
+          <div class="rounded-2xl border border-sky-300/12 bg-sky-300/8 p-4">
+            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">Open To</p>
+            <p class="mt-2 text-sm font-medium text-white">Internships</p>
+          </div>
+          <div class="rounded-2xl border border-orange-300/12 bg-orange-300/8 p-4">
+            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">Timezone</p>
+            <p class="mt-2 text-sm font-medium text-white">Nepal Time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button id="backToTop" type="button" class="fab-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+<div id="toastStack" class="toast-stack" aria-live="polite" aria-atomic="true"></div>
+
+<script>
+const roles = [
+  "Django web apps",
+  "responsive interfaces",
+  "practical backend systems",
+  "data-driven learning"
+];
+
+const typingTarget = document.getElementById("typingText");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+let roleIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function runTypingEffect() {
+  if (!typingTarget || prefersReducedMotion) {
+    if (typingTarget) {
+      typingTarget.textContent = roles[0];
+    }
+    return;
+  }
+
+  const currentRole = roles[roleIndex];
+  typingTarget.textContent = currentRole.slice(0, charIndex);
+
+  if (!deleting) {
+    charIndex += 1;
+    if (charIndex > currentRole.length) {
+      deleting = true;
+      setTimeout(runTypingEffect, 1100);
+      return;
+    }
+  } else {
+    charIndex -= 1;
+    if (charIndex < 0) {
+      deleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      charIndex = 0;
+    }
+  }
+
+  setTimeout(runTypingEffect, deleting ? 45 : 90);
+}
+
+const revealElements = document.querySelectorAll(".reveal");
+
+if (prefersReducedMotion) {
+  revealElements.forEach((element) => element.classList.add("show"));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.18
+  });
+
+  revealElements.forEach((element) => observer.observe(element));
+}
+
+runTypingEffect();
+
+const cursorGlow = document.getElementById("cursorGlow");
+const scrollProgress = document.getElementById("scrollProgress");
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+const backToTop = document.getElementById("backToTop");
+const copyButtons = document.querySelectorAll("[data-copy]");
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = Array.from(document.querySelectorAll('main section[id]'));
+const interactiveCards = document.querySelectorAll('.tilt-card');
+const contactForm = document.querySelector('#contact form');
+const toastStack = document.getElementById('toastStack');
+const skillFilterButtons = document.querySelectorAll('[data-skill-filter]');
+const skillCards = document.querySelectorAll('[data-skill-category]');
+const skillMeterFills = document.querySelectorAll('.skill-meter-fill');
+const skillDetailTitle = document.getElementById('skillDetailTitle');
+const skillDetailFocus = document.getElementById('skillDetailFocus');
+const skillDetailSummary = document.getElementById('skillDetailSummary');
+const skillDetailLevel = document.getElementById('skillDetailLevel');
+const skillDetailPoints = document.getElementById('skillDetailPoints');
+
+function showToast(message, type = 'success') {
+  if (!toastStack) {
+    return;
+  }
+
+  const toast = document.createElement('div');
+  toast.className = `toast ${type}`;
+  toast.textContent = message;
+  toastStack.appendChild(toast);
+
+  requestAnimationFrame(() => {
+    toast.classList.add('show');
+  });
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => {
+      toast.remove();
+    }, 280);
+  }, 2200);
+}
+
+function updateSkillDetail(card) {
+  if (!card || !skillDetailTitle || !skillDetailFocus || !skillDetailSummary || !skillDetailLevel || !skillDetailPoints) {
+    return;
+  }
+
+  skillDetailTitle.textContent = card.dataset.skillName || '';
+  skillDetailFocus.textContent = card.dataset.skillFocus || '';
+  skillDetailSummary.textContent = card.dataset.skillSummary || '';
+  skillDetailLevel.textContent = `${card.dataset.skillLevel || 0}% confidence`;
+
+  const points = (card.dataset.skillPoints || '').split('|').filter(Boolean);
+  skillDetailPoints.innerHTML = points.map((point) => `
+    <div class="skill-detail-point"><span></span><p class="text-slate-200">${point}</p></div>
+  `).join('');
+}
+
+if (cursorGlow && !prefersReducedMotion && window.innerWidth > 768) {
+  document.addEventListener("mousemove", (event) => {
+    cursorGlow.style.left = event.clientX + "px";
+    cursorGlow.style.top = event.clientY + "px";
+  });
+} else if (cursorGlow) {
+  cursorGlow.style.display = "none";
+}
+
+function updateScrollUI() {
+  const scrollTop = window.scrollY;
+  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollableHeight > 0 ? scrollTop / scrollableHeight : 0;
+
+  if (scrollProgress) {
+    scrollProgress.style.transform = `scaleX(${progress})`;
+  }
+
+  if (backToTop) {
+    backToTop.classList.toggle("show", scrollTop > 320);
+  }
+
+  updateActiveNavLink();
+}
+
+function updateActiveNavLink() {
+  if (!sections.length || !navLinks.length) {
+    return;
+  }
+
+  const scrollPosition = window.scrollY + 180;
+  const firstSectionTop = sections[0].offsetTop;
+
+  if (window.scrollY < firstSectionTop - 220) {
+    navLinks.forEach((link) => link.classList.remove('active'));
+    return;
+  }
+
+  let activeSectionId = sections[0].id;
+
+  sections.forEach((section) => {
+    if (scrollPosition >= section.offsetTop) {
+      activeSectionId = section.id;
+    }
+  });
+
+  navLinks.forEach((link) => {
+    const matches = link.getAttribute('href') === `#${activeSectionId}`;
+    link.classList.toggle('active', matches);
+  });
+}
+
+if (skillMeterFills.length) {
+  const meterObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      const level = entry.target.dataset.level || '0';
+      entry.target.style.width = `${level}%`;
+      meterObserver.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.35
+  });
+
+  skillMeterFills.forEach((fill) => meterObserver.observe(fill));
+}
+
+if (skillFilterButtons.length && skillCards.length) {
+  skillFilterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.skillFilter;
+
+      skillFilterButtons.forEach((item) => item.classList.toggle('active', item === button));
+
+      skillCards.forEach((card) => {
+        const shouldShow = filter === 'all' || card.dataset.skillCategory === filter;
+        card.style.display = shouldShow ? '' : 'none';
+      });
+    });
+  });
+
+  skillCards.forEach((card) => {
+    const activateCard = () => updateSkillDetail(card);
+    card.addEventListener('mouseenter', activateCard);
+    card.addEventListener('focusin', activateCard);
+    card.addEventListener('click', activateCard);
+  });
+
+  const defaultSkill = document.querySelector('[data-skill-name="Django & Python"]') || skillCards[0];
+  updateSkillDetail(defaultSkill);
+}
+
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.innerHTML = isOpen
+      ? '<i class="fa-solid fa-xmark"></i>'
+      : '<i class="fa-solid fa-bars"></i>';
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+  });
+}
+
+if (backToTop) {
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
+  });
+}
+
+copyButtons.forEach((button) => {
+  button.addEventListener("click", async () => {
+    const text = button.dataset.copy;
+
+    try {
+      await navigator.clipboard.writeText(text);
+      const previousLabel = button.textContent;
+      button.textContent = "Copied";
+      showToast('Copied to clipboard');
+      setTimeout(() => {
+        button.textContent = previousLabel;
+      }, 1400);
+    } catch (error) {
+      button.textContent = "Failed";
+      showToast('Clipboard copy failed', 'error');
+      setTimeout(() => {
+        button.textContent = "Copy";
+      }, 1400);
+    }
+  });
+});
+
+if (!prefersReducedMotion && window.innerWidth > 768) {
+  interactiveCards.forEach((card) => {
+    let frameId = null;
+
+    card.addEventListener('mousemove', (event) => {
+      const rect = card.getBoundingClientRect();
+      const offsetX = event.clientX - rect.left;
+      const offsetY = event.clientY - rect.top;
+      const rotateY = ((offsetX / rect.width) - 0.5) * 8;
+      const rotateX = ((offsetY / rect.height) - 0.5) * -8;
+
+      if (frameId) {
+        cancelAnimationFrame(frameId);
+      }
+
+      frameId = requestAnimationFrame(() => {
+        card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`;
+      });
+    });
+
+    card.addEventListener('mouseleave', () => {
+      if (frameId) {
+        cancelAnimationFrame(frameId);
+        frameId = null;
+      }
+      card.style.transform = '';
+    });
+  });
+}
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (event) => {
+    const emailField = contactForm.querySelector('input[name="email"]');
+    const messageField = contactForm.querySelector('textarea[name="message"]');
+    const nameField = contactForm.querySelector('input[name="name"]');
+    const subjectField = contactForm.querySelector('input[name="subject"]');
+    const placeholderEmail = contactForm.getAttribute('action')?.includes('your-email@example.com');
+
+    if (placeholderEmail) {
+      event.preventDefault();
+      showToast('Replace the placeholder email before using the form', 'error');
+      return;
+    }
+
+    if (emailField && !emailField.value.includes('@')) {
+      event.preventDefault();
+      showToast('Enter a valid email address', 'error');
+      emailField.focus();
+      return;
+    }
+
+    if (messageField && messageField.value.trim().length < 15) {
+      event.preventDefault();
+      showToast('Message should be at least 15 characters', 'error');
+      messageField.focus();
+      return;
+    }
+
+    if (nameField && subjectField && !subjectField.value.trim()) {
+      subjectField.value = `Portfolio message from ${nameField.value.trim() || 'a visitor'}`;
+    }
+
+    showToast('Sending your message...');
+  });
+}
+
+window.addEventListener("scroll", updateScrollUI, { passive: true });
+updateScrollUI();
+</script>
+</body>
+</html>
